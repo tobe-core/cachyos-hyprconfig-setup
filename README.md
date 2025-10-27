@@ -1,2 +1,2 @@
 # CachyOS Config Setup
-A simple tool to set up my [CachyOS config](https://github.com/tobe-core/cachyos-hyprconfig)
+A simple tool to quickly set up my [CachyOS config](https://github.com/tobe-core/cachyos-hyprconfig)
