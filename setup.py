@@ -9,7 +9,7 @@ def setup(backup):
     if not os.path.exists("~/Documentos/code/PyWall"):
         os.system("git clone https://github.com/tobe-core/PyWall.git ~/Documentos/code/PyWall && rm ~/Documentos/code/PyWall/README.md")
 
-    os.system("git clone https://github.com/tobe-core/cachyos-hyprconfig-extra.git ~/cachyos-extra && cp -r ~/cachyos-extra/cursors/* ~/.icons/")
+    os.system("git clone https://github.com/tobe-core/cachyos-hyprconfig-extra.git ~/cachyos-extra && cp -r ~/cachyos-extra/cursors/* ~/.icons/ && cp -r ~/cachyos-extra/wallpapers ~/Im\u00e1genes/")
 
     os.system("rm -rf ~/cachyos-extra && rm -rf ~/cachyos-hyprconfig")
 
