@@ -11,7 +11,7 @@ def setup(backup):
 
     os.system("git clone https://github.com/tobe-core/cachyos-hyprconfig-extra.git ~/cachyos-extra && cp -r ~/cachyos-extra/cursors/* ~/.icons/")
 
-    os.system("rm -rf ~/cachyos-hyprconfig")
+    os.system("rm -rf ~/cachyos-extra && rm -rf ~/cachyos-hyprconfig")
 
     exit()
 
