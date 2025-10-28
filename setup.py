@@ -2,14 +2,16 @@ import os
 
 def setup(backup):
     if backup:
-        os.system("cp -r .config .config.bak")
+        os.system("cp -r ~/.config ~/.config.bak")
     
-   os.system("git clone https://github.com/tobe-core/cachyos-hyprconfig.git cachyos-hyprconfig && cp -r cachyos-hyprconfig/* .config/ && rm .config/README.md")
+    os.system("git clone https://github.com/tobe-core/cachyos-hyprconfig.git ~/cachyos-hyprconfig && cp -r ~/cachyos-hyprconfig/* ~/.config/ && rm ~/.config/README.md")
     
-    if not os.path.exists("Documentos/code/PyWall"):
-        os.system("git clone https://github.com/tobe-core/PyWall.git Documentos/code/PyWall && rm Documentos/code/PyWall/README.md")
-    
-    os.system("rm -rf cachyos-hyprconfig")
+    if not os.path.exists("~/Documentos/code/PyWall"):
+        os.system("git clone https://github.com/tobe-core/PyWall.git ~/Documentos/code/PyWall && rm ~/Documentos/code/PyWall/README.md")
+
+    os.system("git clone https://github.com/tobe-core/cachyos-hyprconfig-extra.git ~/cachyos-extra && cp -r ~/cachyos-extra/cursors/* ~/.icons/")
+
+    os.system("rm -rf ~/cachyos-hyprconfig")
 
     exit()
 
